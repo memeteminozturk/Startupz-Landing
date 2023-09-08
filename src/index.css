@@ -9,10 +9,41 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-text-color: #3D4F5C;
+  --secondary-text-color: #FB8958;
+}
+
+/*  import fonts */
+@font-face {
+  font-family: Circular Std;
+  src: url(assets/fonts/circular-std-medium-500.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-family: Circular Std, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  color: #333;
+  color: var(--primary-text-color);
   background-color: #fff;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.section-distance {
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 2rem !important;
 }
