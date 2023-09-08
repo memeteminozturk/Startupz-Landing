@@ -1,0 +1,39 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &--title {
+            font-size: 85px;
+        }
+
+        &--description {
+            margin-bottom: 2rem;
+        }
+
+        &--button {
+            background-color: #46B8C8;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 3rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: transparent;
+                color: #46B8C8;
+                border: 1px solid #46B8C8;
+            }
+        }
+    }
+
+}

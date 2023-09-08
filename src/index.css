@@ -47,3 +47,14 @@ body {
 section {
   margin-bottom: 2rem !important;
 }
+
+.title {
+  color: var(--primary-text-color);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 24px;
+  color: var(--secondary-text-color);
+}
