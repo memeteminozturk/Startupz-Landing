@@ -16,7 +16,7 @@ const Hero = () => {
           <p className="hero__content--description text">
             We are startup studio that develops and launches new companies.
           </p>
-          <a href="#" className="hero__content--button">
+          <a href="#works" className="hero__content--button">
             See our works
           </a>
         </div>

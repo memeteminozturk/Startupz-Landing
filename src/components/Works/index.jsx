@@ -59,7 +59,7 @@ const Works = () => {
                 <img src={work.image} alt={work.alt} />
               </div>
               <div className="works__list--item-footer">
-                <a href="/" className="works__list--item-footer-button">
+                <a href="#" className="works__list--item-footer-button">
                   More
                 </a>
               </div>
