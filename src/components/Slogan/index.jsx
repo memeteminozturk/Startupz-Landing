@@ -4,8 +4,7 @@ import sloganImg from '../../assets/images/slogan-image.png'
 
 const Slogan = () => {
   return (
-    <section className="slogan">
-
+    <section className="slogan" id="slogan">
         <div className="container">
             <div className="slogan__img">
                 <img src={sloganImg} alt="Slogan" />

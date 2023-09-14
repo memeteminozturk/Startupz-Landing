@@ -67,3 +67,22 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .slogan {
+        padding: 3rem 0;
+
+        &__img {
+            display: none;
+        }
+
+        &__title {
+            font-size: 30px;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

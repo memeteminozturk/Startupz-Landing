@@ -4,7 +4,7 @@ import HeroImage from "../../assets/images/hero-image.png";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero__image">
         <img src={HeroImage} alt="Hero Image" />
       </div>

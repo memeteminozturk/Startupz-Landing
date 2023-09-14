@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 :root {
@@ -42,10 +43,6 @@ body {
 
 .section-distance {
   padding: 2rem 0;
-}
-
-section {
-  margin-bottom: 2rem !important;
 }
 
 .title {

@@ -1,0 +1,94 @@
+.works {
+    padding: 7rem 0;
+    text-align: center;
+
+    &__list {
+        // 2 items per row for large screens
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin-top: 5rem;
+
+        &--item {
+            padding: 3rem 5rem;
+            box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+
+            &-title {
+                font-size: 32px;
+                margin-bottom: 1rem;
+            }
+
+            &-text {
+                // line height * font size * line count = 1.25 * 32 * 2 = 80
+                height: 80px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 1rem;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            &-image {
+                height: 250px;
+                width: 100%;
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            &-footer {
+
+                &-button {
+                    border: 1px solid #46B8C8;
+                    padding: 0.75rem 2rem;
+                    border-radius: 3rem;
+                    transition: all 0.3s ease;
+                    color: #46B8C8;
+
+                    &:hover {
+                        background-color: #46B8C8;
+                        color: #fff;
+                    }
+                }
+
+
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .works {
+        padding: 3rem 0;
+
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+            margin-top: 3rem;
+
+            &--item {
+                padding: 2rem 3rem;
+
+                &-image {
+                    height: 200px;
+                }
+
+                &-text {
+                    height: max-content;
+                }
+            }
+
+        }
+    }
+}

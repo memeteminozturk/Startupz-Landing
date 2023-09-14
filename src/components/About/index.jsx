@@ -10,7 +10,7 @@ const About = () => {
   ];
 
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="container">
         <div className="about__image">
           <img src={aboutImage} alt="about" />
@@ -32,7 +32,7 @@ const About = () => {
               {about.map((item, index) => (
                 <div className="about__list--item" key={index}>
                   <span className="about__list--item-number">
-                    {index <= 9 ? `0${index + 1}` : index + 1}
+                    {index < 9 ? `0${index + 1}` : index + 1}
                   </span>
                   <p className="about__list--item-text">{item}</p>
                 </div>
