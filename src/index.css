@@ -19,6 +19,27 @@ html {
   --secondary-text-color: #FB8958;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #46B8C8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-text-color);
+}
+
+::selection {
+  background: var(--secondary-text-color);
+  color: #fff;
+}
+
 /*  import fonts */
 @font-face {
   font-family: Circular Std;
